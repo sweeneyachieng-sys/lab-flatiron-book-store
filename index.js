@@ -46,11 +46,15 @@ const bookStore = {
 // Write your code here!
 
 const bookStoreTitle = document.querySelector("#header");
+const bookList = document.querySelector("#book-list");
+
 bookStoreTitle.textContent = bookStore.name;
 
 //loopind throught every book element
 for (const book of bookStore.books) {
     const bookContainer = document.createElement("li");
+
+    
     const bookTitle = document.createElement("h3");
     const bookAuthor = document.createElement("p");
     const bookImage = document.createElement("img");
@@ -66,5 +70,6 @@ bookContainer.appendChild(bookImage);
 bookList.appendChild(bookContainer);
 
 }
+
 
 
